@@ -76,4 +76,7 @@ dependencies {
     //Magic Indicator - Tab Layout
     implementation 'com.github.hackware1993:MagicIndicator:1.6.0' // for support lib
     implementation 'com.github.hackware1993:MagicIndicator:1.7.0' // for androidx
+
+    //toast
+    implementation 'com.valdesekamdem.library:md-toast:0.9.0'
 }
