@@ -4,6 +4,8 @@ import android.app.Dialog
 import android.content.Context
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
+import android.net.ConnectivityManager
+import android.net.NetworkInfo
 import android.os.SystemClock
 import android.view.Gravity
 import android.view.ViewGroup
@@ -46,6 +48,14 @@ object Utils {
         dialogRate.window!!.setGravity(Gravity.BOTTOM)
         dialogRate.window!!.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         return dialogRate
+    }
+
+    fun isInternetAvailable(context: Context): Boolean {
+        val connectivityManager =
+            context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        if(connectivityManager == null) return true
+        return connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE)?.state == NetworkInfo.State.CONNECTED ||
+                connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI)?.state == NetworkInfo.State.CONNECTED
     }
 
     fun isClickRecently(delayTime: Long = 1000): Boolean {
