@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_black">#000000</color>
+    <color name="color_white">#FFFFFF</color>
+
+    <!--    ver 39-->
+    <color name="color_state_pressed">#CDD0D9</color>
+<!--    <color name="color_bg_btn_ads">#4D34B4</color>-->
+    <color name="color_trans">#00FFFFFF</color>
+    <color name="color_text_note_home">#AE8BD6</color>
+    <color name="color_primary">#4938B8</color>
+    <color name="color_bg_item_home_view">#E5DFFB</color>
+    <color name="color_text_hint">#9A9A9A</color>
+    <color name="color_save_text">#FF3B3B</color>
+    <color name="color_save_text_not_state">#D8D8D8</color>
+    <color name="color_text_tab_layout">#5F5F5F</color>
+    <color name="color_bg_item_in_camera_screen">#992E2E2E</color>
+    <color name="color_bg_crop_view">#2F2F2F</color>
+    <color name="color_bg_switch_compat">#B9B9B9</color>
+    <color name="color_bg_cropped_image">#434444</color>
+
+</resources>
