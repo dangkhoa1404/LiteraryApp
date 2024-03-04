@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">LiteraryApp</string>
+    <string name="app_name" translatable="false">LiteraryApp</string>
+
+    <string name="app_name_title">Kịch Văn học</string>
+
+    <string name="txt_no_connection">Không có Internet!</string>
+    <string name="txt_check_your_internet">Kiểm tra kết nối Internet và thử lại</string>
+    <string name="txt_retry">Thử lại</string>
+    <string name="txt_loading_data">Đang tải dữ liệu…</string>
+    <string name="txt_pass">Mật khẩu</string>
+    <string name="txt_sign_in_uppercase">ĐĂNG NHẬP</string>
+    <string name="txt_forgot_pass">Quên mật khẩu?</string>
+    <string name="txt_account_not_exist">Tài khoản không tồn tại</string>
+    <string name="txt_wrong_pass">Sai mật khẩu</string>
+    <string name="txt_account">Mã người dùng</string>
 </resources>
