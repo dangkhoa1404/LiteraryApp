@@ -1,9 +1,11 @@
 package com.lutech.literaryapp.base
 
 import android.app.Dialog
+import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.net.ConnectivityManager
+import android.os.Build
 import android.os.Bundle
 import android.provider.Settings
 import android.view.View
@@ -37,7 +39,12 @@ abstract class BaseActivity : AppCompatActivity(), NetworkChangeReceiver.Network
     private fun initDatabaseActivity() {
         mNetworkChangeReceiver =
             NetworkChangeReceiver(this)
-        registerReceiver(mNetworkChangeReceiver, IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION))
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU){
+            registerReceiver(mNetworkChangeReceiver, IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION), Context.RECEIVER_EXPORTED)
+        }else{
+            registerReceiver(mNetworkChangeReceiver, IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION))
+        }
     }
 
     override fun onInternetAvailable() {

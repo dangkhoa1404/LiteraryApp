@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">LiteraryApp</string>
+    <string name="app_name" translatable="false">Kịch Văn học</string>
 
     <string name="app_name_title">Kịch Văn học</string>
 
@@ -13,4 +13,27 @@
     <string name="txt_account_not_exist">Tài khoản không tồn tại</string>
     <string name="txt_wrong_pass">Sai mật khẩu</string>
     <string name="txt_account">Mã người dùng</string>
+    <string name="txt_user">Cá nhân</string>
+    <string name="txt_general">Chung</string>
+    <string name="txt_drama">Kịch</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_upload_video">Tải video lên:</string>
+    <string name="txt_upload">Tải lên</string>
+
+    <string name="txt_see_details">Xem chi tiết</string>
+
+    <string name="txt_please_add_file_to_upload">Vui lòng chọn tệp để tải lên</string>
+    <string name="txt_general_theory">Lý Thuyết chung:</string>
+
+    <string name="txt_no_current_data">Không có dữ liệu nào hiện tại</string>
+    <string name="txt_share">Chia sẻ</string>
+
+    <string name="txt_grade_10">Tài liệu khối lớp 10</string>
+    <string name="txt_grade_11">Tài liệu khối lớp 11</string>
+    <string name="txt_grade_12">Tài liệu khối lớp 12</string>
+
+    <string name="txt_cannot_be_empty">Không được để trống</string>
+    <string name="txt_find_account_fail">Tìm tài khoản thất bại</string>
+    <string name="txt_sign_in_success">Đăng nhập thành công</string>
 </resources>

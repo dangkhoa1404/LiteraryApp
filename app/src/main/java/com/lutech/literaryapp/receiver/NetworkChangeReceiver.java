@@ -19,19 +19,22 @@ public class NetworkChangeReceiver extends BroadcastReceiver {
         try {
             if (context != null && intent != null) {
                 final String action = intent.getAction();
-                if (ConnectivityManager.CONNECTIVITY_ACTION.equals(action)) {
-                    if (Utils.INSTANCE.isInternetAvailable(context)) {
-                        if (mNetworkStateListener != null) {
-                            mNetworkStateListener.onInternetAvailable();
+                switch (action) {
+                    case ConnectivityManager.CONNECTIVITY_ACTION:
+                        if (Utils.INSTANCE.isInternetAvailable(context)) {
+                            if (mNetworkStateListener != null) {
+                                mNetworkStateListener.onInternetAvailable();
+                            }
+                            intent.setAction("ok");
+                        } else {
+                            intent.setAction("fail");
+                            if (mNetworkStateListener != null) {
+                                mNetworkStateListener.onOffline();
+                            }
+                            Log.d("1223232323", "fail");
                         }
-                        intent.setAction("ok");
-                    } else {
-                        intent.setAction("fail");
-                        if (mNetworkStateListener != null) {
-                            mNetworkStateListener.onOffline();
-                        }
-                        Log.d("1223232323", "fail");
-                    }
+
+                        break;
                 }
             }
         } catch (NullPointerException e) {

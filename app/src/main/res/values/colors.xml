@@ -15,5 +15,10 @@
     <color name="color_background_main">#F9FDFF</color>
 
     <color name="color_red">#FF0000</color>
+    <color name="color_yellow">#EFEF00</color>
+    <color name="color_green">#008000</color>
+
+    <color name="color_gray">#A3A3A3</color>
+    <color name="color_gray_2">#7A7A7A</color>
 
 </resources>

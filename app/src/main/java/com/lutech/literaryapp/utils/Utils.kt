@@ -1,17 +1,25 @@
 package com.lutech.literaryapp.utils
 
+import android.app.Activity
 import android.app.Dialog
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.net.ConnectivityManager
 import android.net.NetworkInfo
+import android.net.Uri
 import android.os.SystemClock
 import android.view.Gravity
+import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
+import android.view.inputmethod.InputMethodManager
+import androidx.core.content.FileProvider
 import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.lutech.literaryapp.BuildConfig
 import com.lutech.literaryapp.R
+import java.io.File
 
 object Utils {
 
@@ -64,5 +72,10 @@ object Utils {
         }
         mLastClickTime = SystemClock.elapsedRealtime()
         return false
+    }
+
+    fun hideKeyboardFrom(context: Context, view: View) {
+        val imm: InputMethodManager = context.getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(view.windowToken, 0)
     }
 }

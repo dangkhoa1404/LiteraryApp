@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "351405005072",
+    "firebase_url": "https://literary-drama-default-rtdb.firebaseio.com",
+    "project_id": "literary-drama",
+    "storage_bucket": "literary-drama.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351405005072:android:3d722fe76c1e6be0fdad95",
+        "android_client_info": {
+          "package_name": "com.lutech.literaryapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3XwCJks8kJfdN0JsEUpIprzHh-_jBkGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

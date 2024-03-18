@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/it_drama"
+        android:icon="@drawable/ic_book"
+        android:title="@string/txt_drama" />
+
+    <item
+        android:id="@+id/it_grade"
+        android:icon="@drawable/ic_bottom_navi_general"
+        android:title="@string/txt_general" />
+
+    <item
+        android:id="@+id/it_individual"
+        android:icon="@drawable/ic_bottom_navi_user"
+        android:title="@string/txt_user" />
+
+</menu>

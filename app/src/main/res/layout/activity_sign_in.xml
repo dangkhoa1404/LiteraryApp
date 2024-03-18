@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clSignIn"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".screen.signin.SignInActivity">
@@ -17,8 +18,8 @@
             app:cardElevation="@null"
             app:layout_constraintBottom_toTopOf="@+id/llSignIn"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:layout_width="@dimen/_100sdp"
@@ -140,5 +141,9 @@
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/layoutLoadingSignIn"
+        layout="@layout/layout_loading_data" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
