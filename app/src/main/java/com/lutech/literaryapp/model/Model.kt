@@ -9,11 +9,18 @@ data class LocalDocument(
     var pathDocument: String? = "",
 )
 
-data class Account(
+data class LinkTest(
+    var idLinkTest: String? = "",
+    var nameLinkTest: String? = "",
+    var pathLinkTest: String? = "",
+)
+
+data class User(
     var idNhanVien: String? = "",
-    var idChucVu: String? = "",
-    var tenNhanVien: String? = "",
-    var anhNhanVien: String? = "",
+    var idNguoiDung: String? = "",
+    var tenNguoiDung: String? = "",
+    var chucVu: String? = "",
+    var lop: String? = "",
 )
 
 data class LocalFile(

@@ -12,6 +12,11 @@
         android:title="@string/txt_general" />
 
     <item
+        android:id="@+id/it_link_test"
+        android:icon="@drawable/ic_link"
+        android:title="@string/txt_link_test" />
+
+    <item
         android:id="@+id/it_individual"
         android:icon="@drawable/ic_bottom_navi_user"
         android:title="@string/txt_user" />

@@ -36,4 +36,16 @@
     <string name="txt_cannot_be_empty">Không được để trống</string>
     <string name="txt_find_account_fail">Tìm tài khoản thất bại</string>
     <string name="txt_sign_in_success">Đăng nhập thành công</string>
+
+    <string name="txt_access_the_link">Truy cập đường dẫn</string>
+    <string name="txt_link_to_test">Bài thi trắc nghiệm</string>
+    <string name="txt_link_test">Trắc nghiệm</string>
+
+    <string name="txt_sign_out">Đăng xuất</string>
+
+    <string name="txt_notification">Thông báo</string>
+    <string name="txt_you_want_to_sign_out">Bạn muốn đăng xuất?</string>
+    <string name="txt_deny">Không</string>
+    <string name="txt_yes">Đồng ý</string>
+
 </resources>

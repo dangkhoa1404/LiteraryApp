@@ -40,8 +40,13 @@ class HomeActivity : BaseActivity() {
                     return@OnItemSelectedListener true
                 }
 
-                R.id.it_individual -> {
+                R.id.it_link_test -> {
                     viewPager2.setCurrentItem(2, false)
+                    return@OnItemSelectedListener true
+                }
+
+                R.id.it_individual -> {
+                    viewPager2.setCurrentItem(3, false)
                     return@OnItemSelectedListener true
                 }
             }
